@@ -1,0 +1,26 @@
+
+.popup {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  min-width: 244px;
+  padding: 10px 10px 0;
+  position: absolute;
+  top: 53px;
+  right: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition-property: grid-template-rows, border;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  &__wrapper {
+    min-height: 0;
+  }
+}
+
+.active {
+  grid-template-rows: 1fr;
+  border: 1px solid #181818;
+  padding: 10px;
+}

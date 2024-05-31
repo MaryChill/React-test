@@ -1,0 +1,13 @@
+.slide {
+  border: 1px solid #181818;
+  border-radius: 15px;
+  min-height: 400px;
+  padding: 10px;
+
+  &__wrapper {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
