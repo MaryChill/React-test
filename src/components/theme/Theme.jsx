@@ -1,24 +1,17 @@
-import ListElement from "../list/ListElement.jsx";
 import React from "react";
 import "./Theme.scss"
+import Tabs from "../tabs/Tabs.jsx";
+import { dataTabs } from "../data.js";
 
-export default function Theme({theme, elements}) {
+export default function Theme({theme, items, tab}) {
+    // console.log(dataTabs[0])
     return (
         <div className="theme">
             <div className="theme__item">
-                <h4 className="h4">{theme[0]}</h4>
-                <ul>
-                    <ListElement item={elements.item} link={elements.link}/>
-                    <ListElement item={elements.item} link={elements.link}/>
-                </ul>
+                <h4 className="h4">{theme}</h4>
+                <Tabs onClick={() => tab(items[0])}>{items[0]}</Tabs>
+                <Tabs onClick={() => tab(items[1])}>{items[1]}</Tabs>
             </div>
-            {/*<div className="theme__item">*/}
-            {/*    <h4 className="h4">{theme[1]}</h4>*/}
-            {/*    <ul>*/}
-            {/*        <ListElement item={elements[0].item} link={elements[0].link}/>*/}
-            {/*        <ListElement item={elements[1].item} link={elements[1].link}/>*/}
-            {/*    </ul>*/}
-            {/*</div>*/}
         </div>
     )
 }

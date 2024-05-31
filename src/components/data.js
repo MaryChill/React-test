@@ -16,46 +16,55 @@ export const dataList = [
 export const dataSections = [
     {
         title: 'JavaScript',
-        theme: ['function', 'let'],
-        elements: [
+        theme: [
             {
-                link: '',
-                item: 'declaration'
+                subTitle: 'function',
+                items: ['declaration', 'scope']
             },
             {
-                link: '',
-                item: 'замыкания'
+                subTitle: 'let',
+                items: ['variable', 'const']
             }
-        ]
+        ] 
     },
     {
         title: 'React',
-        theme: 'Hooks',
-        elements: [
+        theme: [
             {
-                link: '',
-                item: 'useState'
+                subTitle: 'Hooks',
+                items: ['useState', 'useRef']
             },
             {
-                link: '',
-                item: 'useRef'
+                subTitle: 'react2',
+                items: ['use1', 'use2']
             }
-        ]
-
+        ] 
     },
     {
         title: 'TypeScript',
-        theme: 'Hooks',
-        elements: [
+        theme: [
             {
-                link: '',
-                item: 'useState'
+                subTitle: 'TypeScript',
+                items: ['TypeScript1', 'TypeScript2']
             },
             {
-                link: '',
-                item: 'useRef'
+                subTitle: '',
+                items: ['', '']
             }
-        ]
+        ] 
+    },
+    {
+        title: 'HTML & CSS',
+        theme: [
+            {
+                subTitle: 'html',
+                items: ['TypeScript1', 'TypeScript2']
+            },
+            {
+                subTitle: 'css',
+                items: ['', '']
+            }
+        ] 
     }
 ]
 export const dataLibraries = [
@@ -66,5 +75,16 @@ export const dataLibraries = [
     {
         link: 'https://fancyapps.com/fancybox/',
         item: 'Fancybox'
+    },
+]
+
+export const dataTabs = [
+    {
+        declaration:  'The function declaration creates a binding of a new function to a given name.',
+        scope : 'Замыкание — это комбинация функции и лексического окружения, в котором эта функция была определена',
+        variable: 'var const',
+        'const': 'const info',
+        useState:  'hhhhhhhhhhhhhhhhhoooooooooo',
+        useRef : 'usssseeeeee'
     },
 ]

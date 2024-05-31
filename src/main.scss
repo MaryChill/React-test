@@ -66,17 +66,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  //position: relative;
 }
 
-//.wrapper {
-//  border: 1px solid #181818;
-//  border-radius: 15px;
-//}
 .swiper {
   --swiper-theme-color: #000000;
 }
 .swiper-pagination {
   width: 10%!important;
   left: 45%!important;
+}
+.tab {
+  padding-top: 40px;
+
+  &__item {
+    font-size: 20px;
+  }
 }
