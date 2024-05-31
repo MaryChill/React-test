@@ -1,11 +1,8 @@
 import "./Slide.scss";
 import React from "react";
 import Theme from "../theme/Theme.jsx";
-// import ListElement from "../list/ListElement.jsx";
 
 export default function Slide({title, theme, tab}) {
-
-    // console.log(theme[0], elements[0])
     return (
         <div className="slide">
             <h2 className="h2">{title}</h2>

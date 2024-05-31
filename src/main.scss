@@ -29,7 +29,6 @@
   // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
 .h2 {
   font-weight: bold;
   font-size: 44px;
@@ -42,10 +41,6 @@
   font-weight: normal;
   font-size: 34px;
 }
-
-//34
-//24
-//16
 
 .container {
   width: calc(100% - 320px);
@@ -66,6 +61,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+
+  // &__title {
+  //   white-space: nowrap;
+  // }
 }
 
 .swiper {
@@ -80,5 +79,45 @@
 
   &__item {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .h2 {
+    font-weight: bold;
+    font-size: 34px;
+  }
+  .h3 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .h4 {
+    font-weight: normal;
+    font-size: 24px;
+  }
+  
+  .container {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header {
+    padding-top: 50px;
+    padding-bottom: 110px;
+  
+  }
+
+  .swiper-pagination {
+    width: 20%!important;
+    left: 40%!important;
+  }
+  .tab {
+    padding-top: 30px;
+  
+    &__item {
+      font-size: 18px;
+    }
   }
 }

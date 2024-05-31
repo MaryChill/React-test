@@ -37,7 +37,7 @@ export default function App() {
       <header className="header">
         <div className="container">
           <nav className="nav">
-            <h3 className="h3">front-end</h3>
+            <h3 className="h3 nav__title">front-end</h3>
             <ul className="list">
               <ListElement {...dataList[0]} />
               <ListElement {...dataList[1]} />

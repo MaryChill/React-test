@@ -24,3 +24,16 @@
   border: 1px solid #181818;
   padding: 10px;
 }
+
+@media screen and (max-width: 700px) {
+  .popup {
+    border-radius: 15px;
+    min-width: 144px;
+    padding: 6px 6px 0;
+    top: 43px;
+  }
+  .active {
+    padding: 6px;
+  }
+
+}

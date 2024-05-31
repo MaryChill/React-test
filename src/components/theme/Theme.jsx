@@ -4,7 +4,6 @@ import Tabs from "../tabs/Tabs.jsx";
 import { dataTabs } from "../data.js";
 
 export default function Theme({theme, items, tab}) {
-    // console.log(dataTabs[0])
     return (
         <div className="theme">
             <div className="theme__item">

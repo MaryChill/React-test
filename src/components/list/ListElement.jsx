@@ -3,20 +3,10 @@ import {useState} from "react";
 import Popup from '../popup/Popup.jsx'
 
 export default function ListElement({link, icon, alt, btn, item}) {
-
     const [popup, setPopup] = useState('')
-    // const [tab, setTab] = useState('')
     function viewPopup() {
         setPopup(popup === '' ? 'active' : '')
     }
-    // function viewTab(element) {
-    //     console.log(element)
-    //     // setTab()
-    // }
-    // function testClick(type) {
-    //     setContent(type)
-    // }
-    // console.log(post)
     return (
         <li>
             {icon !== undefined &&
@@ -32,7 +22,7 @@ export default function ListElement({link, icon, alt, btn, item}) {
 
             }
             {item !== undefined &&
-                <p className="btn">{item}</p> 
+                <p className="btn list__libraries">{item}</p> 
             }
         </li>
 
